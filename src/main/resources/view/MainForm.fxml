@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AnpMain" prefHeight="1030.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Hardware7RayHome.controller.MainFormController">
+   <children>
+      <AnchorPane fx:id="anpmain2" layoutY="-2.0" prefHeight="350.0" prefWidth="1920.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="350.0" fitWidth="1920.0">
+               <image>
+                  <Image url="@../assert.icon/Many-differents-tools_3840x1200.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="350.0" fitWidth="115.0" layoutX="39.0" opacity="0.6">
+               <image>
+                  <Image url="@../assert.icon/main.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="285.0" layoutY="26.0" opacity="0.86" prefHeight="266.0" prefWidth="1350.0" style="-fx-border-color: black; -fx-border-radius: 30; -fx-border-style: double; -fx-background-color: white; -fx-background-radius: 30;">
+               <children>
+                  <Label fx:id="lblTIME" layoutX="1061.0" layoutY="146.0" prefHeight="49.0" prefWidth="257.0">
+                     <font>
+                        <Font name="System Bold Italic" size="40.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="1063.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TP-: 0767857175">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="1063.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-Mail-:7RayHome@gmail.com">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="1050.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="lblDATE" layoutX="1063.0" layoutY="117.0" prefHeight="25.0" prefWidth="270.0">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <ImageView fitHeight="134.0" fitWidth="146.0" layoutX="1010.0" layoutY="64.0">
+               <image>
+                  <Image url="@../assert.icon/logo.png" />
+               </image>
+            </ImageView>
+            <Text fill="RED" layoutX="708.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" wrappingWidth="86.27099609375">
+               <font>
+                  <Font name="System Bold Italic" size="150.0" />
+               </font>
+            </Text>
+            <Text layoutX="824.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RAY">
+               <font>
+                  <Font name="System Bold Italic" size="60.0" />
+               </font>
+            </Text>
+            <Text layoutX="824.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME" wrappingWidth="271.27099609375">
+               <font>
+                  <Font name="System Bold Italic" size="60.0" />
+               </font>
+            </Text>
+            <Line endX="-7.0" endY="-58.0" layoutX="822.0" layoutY="266.0" startX="-7.0" startY="-200.0" strokeWidth="8.0" />
+            <Line endX="-133.0" endY="-68.0" layoutX="832.0" layoutY="276.0" startX="324.0" startY="-68.0" stroke="RED" strokeWidth="8.0" />
+            <AnchorPane layoutY="293.0" prefHeight="58.0" prefWidth="1920.0" style="-fx-background-color: #480C00;">
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="270.0" layoutX="9.0" layoutY="-1.0">
+                     <image>
+                        <Image url="@../assert.icon/buttonStock1h.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="58.0" fitWidth="270.0" layoutX="1635.0" layoutY="-2.0">
+                     <image>
+                        <Image url="@../assert.icon/buttonStock1h.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="58.0" fitWidth="270.0" layoutX="1364.0" layoutY="-2.0">
+                     <image>
+                        <Image url="@../assert.icon/buttonStock1h.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="58.0" fitWidth="270.0" layoutX="1093.0" layoutY="-2.0">
+                     <image>
+                        <Image url="@../assert.icon/buttonStock1h.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="58.0" fitWidth="270.0" layoutX="822.0" layoutY="-2.0">
+                     <image>
+                        <Image url="@../assert.icon/buttonStock1h.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="58.0" fitWidth="270.0" layoutX="551.0" layoutY="-1.0">
+                     <image>
+                        <Image url="@../assert.icon/buttonStock1h.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="58.0" fitWidth="270.0" layoutX="280.0" layoutY="-1.0">
+                     <image>
+                        <Image url="@../assert.icon/buttonStock1h.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="btnDASHBOARD" layoutX="81.0" onAction="#btnDASHBOARDOnAction" prefHeight="58.0" prefWidth="171.0" style="-fx-background-color: light blue; -fx-background-radius: 20;" text="DASHBOARD" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnCUSTOMER" layoutX="349.0" onAction="#btnCUSTOMEROnAction" prefHeight="58.0" prefWidth="171.0" style="-fx-background-color: light blue; -fx-background-radius: 20;" text="CUSTOMERS" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnEMPLOYEE" layoutX="620.0" onAction="#btnEMPLOYEEOnAction" prefHeight="58.0" prefWidth="164.0" style="-fx-background-color: light blue; -fx-background-radius: 20;" text="EMPLOYEES" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnSUPPLIER" layoutX="886.0" onAction="#btnSUPPLIEROnAction" prefHeight="58.0" prefWidth="171.0" style="-fx-background-color: light blue; -fx-background-radius: 20;" text="SUPPLIERS" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnITEM" layoutX="1159.0" onAction="#btnITEMOnAction" prefHeight="58.0" prefWidth="158.0" style="-fx-background-color: light blue; -fx-background-radius: 20;" text="ITEMS" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnORDERS" layoutX="1430.0" onAction="#btnORDERSOnAction" prefHeight="58.0" prefWidth="146.0" style="-fx-background-color: light blue; -fx-background-radius: 20;" text="ORDERS" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnLOGOUT" layoutX="1698.0" layoutY="-1.0" onAction="#btnLOGOUTOnAction" prefHeight="58.0" prefWidth="158.0" style="-fx-background-color: light blue; -fx-background-radius: 20;" text="LOGOUT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="53.0" layoutY="12.0">
+                     <image>
+                        <Image url="@../assert.icon/icons8-dashboard-80(1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="328.0" layoutY="13.0">
+                     <image>
+                        <Image url="@../assert.icon/icons8-customer-64(2).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="593.0" layoutY="12.0">
+                     <image>
+                        <Image url="@../assert.icon/icons8-employee-80(1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="867.0" layoutY="10.0">
+                     <image>
+                        <Image url="@../assert.icon/icons8-supplier-64(2).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="28.0" fitWidth="37.0" layoutX="1153.0" layoutY="14.0">
+                     <image>
+                        <Image url="@../assert.icon/icons8-item-64(1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="28.0" fitWidth="37.0" layoutX="1415.0" layoutY="16.0">
+                     <image>
+                        <Image url="@../assert.icon/icons8-order-64.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="1685.0" layoutY="12.0">
+                     <image>
+                        <Image url="@../assert.icon/icons8-logout-80(1).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <AnchorPane fx:id="anpmain1" layoutY="348.0" prefHeight="680.0" prefWidth="1920.0" />
+      <AnchorPane fx:id="anpmain" layoutX="-1.0" layoutY="349.0" prefHeight="680.0" prefWidth="1920.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Hardware7RayHome.controller.PlaceOrderFormController">
+   <children>
+      <ImageView fitHeight="680.0" fitWidth="1920.0" opacity="0.9">
+         <image>
+            <Image url="@../assert.icon/HD-wallpaper-wood-3d-brown-nature-tree.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="656.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLACE ORDER" wrappingWidth="420.57177734375">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Text>
+      <Line endX="354.0" layoutX="701.0" layoutY="119.0" startX="-194.0" stroke="RED" strokeWidth="8.0" />
+      <Line endX="-87.0" endY="24.0" layoutX="714.0" layoutY="126.0" startX="-87.0" startY="-77.0" strokeWidth="8.0" />
+      <Text fill="WHITE" layoutX="230.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Id" wrappingWidth="191.57177734375">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtORDERID" layoutX="225.0" layoutY="212.0" prefHeight="34.0" prefWidth="289.0" style="-fx-background-radius: 10;" />
+      <Text fill="WHITE" layoutX="230.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="236.57177734375">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1106.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Id" wrappingWidth="207.57177734375">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="226.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name" wrappingWidth="207.57177734375">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="225.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC Number" wrappingWidth="207.57177734375">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="666.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Id" wrappingWidth="207.57177734375">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtDATE" layoutX="226.0" layoutY="286.0" prefHeight="34.0" prefWidth="289.0" style="-fx-background-radius: 10;" />
+      <TextField fx:id="txtITEMID" layoutX="1103.0" layoutY="219.0" prefHeight="34.0" prefWidth="289.0" style="-fx-background-radius: 10;" />
+      <TextField fx:id="txtITEMNAME" layoutX="223.0" layoutY="512.0" onAction="#txtITEMNAMEOnAction" prefHeight="34.0" prefWidth="289.0" style="-fx-background-radius: 10;" />
+      <TextField fx:id="txtNICNUMBER" layoutX="224.0" layoutY="438.0" onAction="#txtNICNUMBEROnAction" prefHeight="34.0" prefWidth="289.0" style="-fx-background-radius: 10;" />
+      <TextField fx:id="txtCUSTOMERID" layoutX="670.0" layoutY="214.0" prefHeight="34.0" prefWidth="289.0" style="-fx-background-radius: 10;" />
+      <TableView fx:id="tblPLACEORDER" layoutX="586.0" layoutY="489.0" opacity="0.8" prefHeight="171.0" prefWidth="911.0">
+         <columns>
+            <TableColumn fx:id="colITEMID" prefWidth="138.0" text="Item Id" />
+            <TableColumn fx:id="colITEMNAME" prefWidth="156.0" text="Item Name" />
+            <TableColumn fx:id="colQUANTITY" prefWidth="133.0" text="Quantity" />
+            <TableColumn fx:id="colPRICE" prefWidth="153.0" text="Price" />
+            <TableColumn fx:id="colTOTAL" prefWidth="149.0" text="Total" />
+            <TableColumn fx:id="colACTION" prefWidth="181.0" text="Action" />
+         </columns>
+      </TableView>
+      <Text fill="WHITE" layoutX="1106.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" wrappingWidth="207.57177734375">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtPRICE" layoutX="1103.0" layoutY="292.0" prefHeight="34.0" prefWidth="289.0" style="-fx-background-radius: 10;" />
+      <Text fill="WHITE" layoutX="1106.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty On Hand" wrappingWidth="207.57177734375">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtQTYONHAND" layoutX="1103.0" layoutY="370.0" prefHeight="34.0" prefWidth="289.0" style="-fx-background-radius: 10;" />
+      <Text fill="WHITE" layoutX="666.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name" wrappingWidth="207.57177734375">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtCUSTOMERNAME" layoutX="670.0" layoutY="286.0" prefHeight="34.0" prefWidth="289.0" style="-fx-background-radius: 10;" />
+      <Text fill="WHITE" layoutX="669.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact" wrappingWidth="207.57177734375">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtCONTACT" layoutX="669.0" layoutY="361.0" prefHeight="34.0" prefWidth="289.0" style="-fx-background-radius: 10;" />
+      <Text fill="WHITE" layoutX="668.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" wrappingWidth="207.57177734375">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtADDRESS" layoutX="668.0" layoutY="438.0" prefHeight="34.0" prefWidth="289.0" style="-fx-background-radius: 10;" />
+      <Text fill="WHITE" layoutX="226.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity" wrappingWidth="207.57177734375">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtQUANTITY" layoutX="223.0" layoutY="586.0" prefHeight="34.0" prefWidth="289.0" style="-fx-background-radius: 10;" />
+      <ComboBox fx:id="combUSERID" layoutX="225.0" layoutY="361.0" prefHeight="34.0" prefWidth="289.0" style="-fx-background-radius: 10;" />
+      <Text fill="WHITE" layoutX="225.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Id" wrappingWidth="207.57177734375">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="273.0" fitWidth="289.0" layoutX="1603.0" layoutY="355.0">
+         <image>
+            <Image url="@../assert.icon/lella.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="1667.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Balance" wrappingWidth="169.0">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Text>
+      <Line endX="85.0" layoutX="1737.0" layoutY="439.0" startX="-70.0" stroke="RED" strokeWidth="4.0" />
+      <ImageView fitHeight="146.0" fitWidth="289.0" layoutX="1597.0" layoutY="123.0">
+         <image>
+            <Image url="@../assert.icon/wooden7.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="146.0" fitWidth="289.0" layoutX="1596.0" layoutY="-1.0">
+         <image>
+            <Image url="@../assert.icon/wooden7.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnADDTOCART" layoutX="1688.0" layoutY="93.0" onAction="#btnADDTOCARTOnAction" style="-fx-background-color: light blue;" text="Add To Cart" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnPLACEORDER" layoutX="1688.0" layoutY="216.0" onAction="#btnPLACEORDEROnAction" style="-fx-background-color: light blue;" text="Place Order" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="39.0" fitWidth="40.0" layoutX="1657.0" layoutY="95.0">
+         <image>
+            <Image url="@../assert.icon/icons8-shopping-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="40.0" layoutX="1658.0" layoutY="217.0">
+         <image>
+            <Image url="@../assert.icon/icons8-purchase-order-64.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblNETBALANCE" layoutX="1701.0" layoutY="465.0" prefHeight="50.0" prefWidth="152.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="680.0" fitWidth="115.0" layoutX="40.0" opacity="0.6">
+         <image>
+            <Image url="@../assert.icon/form.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

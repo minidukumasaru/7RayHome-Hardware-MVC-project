@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode" prefHeight="680.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Hardware7RayHome.controller.ItemFormController">
+   <children>
+      <ImageView fitHeight="680.0" fitWidth="1920.0" opacity="0.9">
+         <image>
+            <Image url="@../assert.icon/HD-wallpaper-wood-3d-brown-nature-tree.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="861.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ITEM FORM" wrappingWidth="420.57177734375">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Text>
+      <Line endX="232.0" layoutX="906.0" layoutY="111.0" startX="-194.0" stroke="RED" strokeWidth="8.0" />
+      <Line endX="-87.0" endY="24.0" layoutX="919.0" layoutY="118.0" startX="-87.0" startY="-77.0" strokeWidth="8.0" />
+      <Text fill="WHITE" layoutX="457.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Id" wrappingWidth="191.57177734375">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtITEMID" layoutX="454.0" layoutY="219.0" onAction="#txtITEMIDOnAction" prefHeight="34.0" prefWidth="289.0" style="-fx-background-radius: 10;" />
+      <Text fill="WHITE" layoutX="457.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name" wrappingWidth="236.57177734375">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="841.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" wrappingWidth="207.57177734375">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="837.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity" wrappingWidth="207.57177734375">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1183.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="207.57177734375">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1185.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="207.57177734375">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtITEMNAME" layoutX="453.0" layoutY="323.0" onAction="#txtITEMNAMEOnAction" onKeyReleased="#txtITEMNAMEOnKeyReleased" prefHeight="34.0" prefWidth="289.0" style="-fx-background-radius: 10;" />
+      <TextField fx:id="txtPRICE" layoutX="837.0" layoutY="327.0" onAction="#txtPRICEOnAction" onKeyReleased="#txtPRICEOnKeyReleased" prefHeight="34.0" prefWidth="289.0" style="-fx-background-radius: 10;" />
+      <TextField fx:id="txtQUANTITY" layoutX="837.0" layoutY="219.0" onAction="#txtQUANTITYOnAction" onKeyReleased="#txtQUANTITYOnKeyReleased" prefHeight="34.0" prefWidth="289.0" style="-fx-background-radius: 10;" />
+      <TextField fx:id="txtDESCRIPTION" layoutX="1179.0" layoutY="216.0" onAction="#txtDESCRIPTIONOnAction" prefHeight="34.0" prefWidth="289.0" style="-fx-background-radius: 10;" />
+      <TextField fx:id="txtDATE" layoutX="1179.0" layoutY="318.0" onAction="#txtDATEOnAction" onKeyReleased="#txtDATEOnKeyReleased" prefHeight="34.0" prefWidth="289.0" style="-fx-background-radius: 10;" />
+      <TableView fx:id="tblITEM" layoutX="457.0" layoutY="397.0" onMouseClicked="#tblITEMOnMouseClicked" opacity="0.8" prefHeight="269.0" prefWidth="1011.0">
+         <columns>
+            <TableColumn fx:id="colITEMID" prefWidth="109.0" text="Id" />
+            <TableColumn fx:id="colITEMNAME" prefWidth="135.0" text="Name" />
+            <TableColumn fx:id="colQUANTITY" prefWidth="171.0" text="Quantity" />
+            <TableColumn fx:id="colPRICE" prefWidth="178.0" text="Price" />
+            <TableColumn fx:id="colDESCRIPTION" prefWidth="210.0" text="Description" />
+            <TableColumn fx:id="colDATE" prefWidth="207.0" text="Date" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="155.0" fitWidth="289.0" layoutX="1608.0" layoutY="498.0">
+         <image>
+            <Image url="@../assert.icon/wooden7.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="155.0" fitWidth="289.0" layoutX="1608.0" layoutY="401.0">
+         <image>
+            <Image url="@../assert.icon/wooden7.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="155.0" fitWidth="289.0" layoutX="1608.0" layoutY="299.0">
+         <image>
+            <Image url="@../assert.icon/wooden7.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="155.0" fitWidth="289.0" layoutX="1608.0" layoutY="196.0">
+         <image>
+            <Image url="@../assert.icon/wooden7.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="146.0" fitWidth="289.0" layoutX="1608.0" layoutY="102.0">
+         <image>
+            <Image url="@../assert.icon/wooden7.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="146.0" fitWidth="289.0" layoutX="1608.0" layoutY="1.0">
+         <image>
+            <Image url="@../assert.icon/wooden7.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnCLEAR" layoutX="1700.0" layoutY="94.0" onAction="#btnCLEAROnAction" prefHeight="40.0" prefWidth="175.0" text="CLEAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSAVE" layoutX="1697.0" layoutY="194.0" onAction="#btnSAVEOnAction" prefHeight="40.0" prefWidth="175.0" text="SAVE" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDELETE" layoutX="1699.0" layoutY="298.0" onAction="#btnDELETEOnAction" prefHeight="40.0" prefWidth="175.0" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUPDATE" layoutX="1703.0" layoutY="400.0" onAction="#btnUPDATEOnAction" prefHeight="40.0" prefWidth="175.0" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSERACH" layoutX="1699.0" layoutY="504.0" onAction="#btnSEARCHOnAction" prefHeight="40.0" prefWidth="175.0" text="SEARCH" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDETAILS" layoutX="1700.0" layoutY="599.0" onAction="#btnDETAILSOnAction" prefHeight="40.0" prefWidth="175.0" text="DETAILS" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="40.0" fitWidth="43.0" layoutX="1688.0" layoutY="92.0">
+         <image>
+            <Image url="@../assert.icon/icons8-clear-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="57.0" layoutX="1679.0" layoutY="290.0">
+         <image>
+            <Image url="@../assert.icon/icons8-delete-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="36.0" layoutX="1692.0" layoutY="192.0">
+         <image>
+            <Image url="@../assert.icon/icons8-save-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="36.0" layoutX="1689.0" layoutY="506.0">
+         <image>
+            <Image url="@../assert.icon/icons8-search-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="43.0" layoutX="1687.0" layoutY="399.0">
+         <image>
+            <Image url="@../assert.icon/icons8-update-80.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="57.0" layoutX="1674.0" layoutY="592.0">
+         <image>
+            <Image url="@../assert.icon/icons8-details-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="680.0" fitWidth="115.0" layoutX="40.0" opacity="0.6">
+         <image>
+            <Image url="@../assert.icon/form.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

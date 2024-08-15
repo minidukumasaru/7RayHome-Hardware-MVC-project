@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode" prefHeight="1030.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Hardware7RayHome.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0">
+         <image>
+            <Image url="@../assert.icon/360_F_268881530_cBSYpYQtlhpzMAU5OCXPqSDkXQZz8yHb.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="rootNodeSmall" layoutX="204.0" layoutY="169.0" opacity="0.8" prefHeight="742.0" prefWidth="1486.0" style="-fx-background-radius: 40; -fx-border-radius: 40; -fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="688.0" fitWidth="952.0" layoutX="534.0" layoutY="30.0" opacity="0.8">
+               <image>
+                  <Image url="@../assert.icon/pngtree-orange-background-with-wave-png-image_6749934.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="134.0" fitWidth="146.0" layoutX="441.0" layoutY="47.0">
+               <image>
+                  <Image url="@../assert.icon/logo.png" />
+               </image>
+            </ImageView>
+            <Text fill="RED" layoutX="139.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" wrappingWidth="86.27099609375">
+               <font>
+                  <Font name="System Bold Italic" size="150.0" />
+               </font>
+            </Text>
+            <Text layoutX="255.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RAY">
+               <font>
+                  <Font name="System Bold Italic" size="60.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.9476190476190476" startY="0.3952380952380952">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Text layoutX="255.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME" wrappingWidth="271.27099609375">
+               <font>
+                  <Font name="System Bold Italic" size="60.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.6222222222222222" centerY="0.3666666666666667" focusAngle="-102.09" focusDistance="0.32558139534883734" radius="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.7631579041481018" green="0.08715074509382248" blue="0.03886452317237854" opacity="0.1899999976158142" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <Line endX="-7.0" endY="-58.0" layoutX="253.0" layoutY="249.0" startX="-7.0" startY="-200.0" strokeWidth="8.0" />
+            <Text layoutX="143.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="140.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="201.0" layoutY="685.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an Account?">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtUsername" layoutX="140.0" layoutY="298.0" onAction="#txtUsernameOnAction" prefHeight="65.0" prefWidth="520.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: BLACK; -fx-border-radius: 20;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txtPassword" layoutX="141.0" layoutY="453.0" onAction="#txtPasswordOnAction" prefHeight="65.0" prefWidth="520.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: BLACK; -fx-border-radius: 20;" />
+            <Button fx:id="btnREGISTERNOW" layoutX="455.0" layoutY="661.0" mnemonicParsing="false" onAction="#btnREGISTERNOWOnAction" prefHeight="35.0" prefWidth="171.0" style="-fx-background-color: light blue;" text="Register Now">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <JFXButton fx:id="btnLOGIN" layoutX="282.0" layoutY="582.0" onAction="#btnLOGINOnAction" prefHeight="52.0" prefWidth="238.0" style="-fx-background-radius: 20; -fx-border-color: red; -fx-border-radius: 20;" styleClass="textFieldRedius" text="LOGIN">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <Line endX="-133.0" endY="-68.0" layoutX="263.0" layoutY="259.0" startX="324.0" startY="-68.0" stroke="RED" strokeWidth="8.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

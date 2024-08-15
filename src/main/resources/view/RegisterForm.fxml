@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Hardware7RayHome.controller.RegisterFormController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutY="-16.0">
+         <image>
+            <Image url="@../assert.icon/360_F_268881530_cBSYpYQtlhpzMAU5OCXPqSDkXQZz8yHb.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="rootNodeSmall" layoutX="204.0" layoutY="153.0" opacity="0.8" prefHeight="742.0" prefWidth="1486.0" style="-fx-background-radius: 40; -fx-border-radius: 40; -fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="688.0" fitWidth="952.0" layoutX="534.0" layoutY="28.0" opacity="0.61">
+               <image>
+                  <Image url="@../assert.icon/pngtree-orange-background-with-wave-png-image_6749934.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="216.0" fitWidth="207.0" layoutX="84.0" layoutY="75.0" style="-fx-rotate: -90;">
+               <image>
+                  <Image url="@../assert.icon/logo.png" />
+               </image>
+            </ImageView>
+            <Text fill="RED" layoutX="120.0" layoutY="636.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-rotate: -90;" text="7" wrappingWidth="196.0">
+               <font>
+                  <Font name="System Bold Italic" size="200.0" />
+               </font>
+            </Text>
+            <Text layoutX="97.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-rotate: -90;" text="RAY">
+               <font>
+                  <Font name="System Bold Italic" size="70.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.9476190476190476" startY="0.3952380952380952">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Text layoutX="133.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-rotate: -90;" text="HOME" wrappingWidth="252.27099609375">
+               <font>
+                  <Font name="System Bold Italic" size="70.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.6222222222222222" centerY="0.3666666666666667" focusAngle="-102.09" focusDistance="0.32558139534883734" radius="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.7631579041481018" green="0.08715074509382248" blue="0.03886452317237854" opacity="0.1899999976158142" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <Line endX="-7.0" endY="187.0" layoutX="221.0" layoutY="415.0" startX="-5.954197883605957" startY="11.154233932495117" strokeWidth="8.0" style="-fx-rotate: -90;" />
+            <Text layoutX="554.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="554.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btnREGISTERNOW" layoutX="748.0" layoutY="565.0" onAction="#btnREGISTERNOWOnAction" prefHeight="52.0" prefWidth="238.0" style="-fx-background-radius: 20; -fx-border-color: red; -fx-border-radius: 20;" styleClass="textFieldRedius" text="Register Now" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <Line endX="-188.7460479736328" endY="-71.05036926269531" layoutX="205.0" layoutY="442.0" startX="384.29156494140625" startY="-71.3990249633789" stroke="RED" strokeWidth="8.0" style="-fx-rotate: -90;" />
+            <Text layoutX="914.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Id">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="919.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="624.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTER HERE....">
+               <font>
+                  <Font name="System Bold Italic" size="50.0" />
+               </font>
+            </Text>
+            <Line endX="220.0" layoutX="845.0" layoutY="183.0" startX="-221.0" stroke="#ff0f0f" strokeWidth="5.0" />
+            <JFXButton fx:id="btnBACK" layoutX="1252.0" layoutY="665.0" onAction="#btnBACKOnAction" prefHeight="52.0" prefWidth="199.0" style="-fx-background-radius: 20; -fx-border-color: black; -fx-border-radius: 20;" styleClass="textFieldRedius" text="BACK">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="1268.0" layoutY="670.0">
+               <image>
+                  <Image url="@../assert.icon/icons8-back-80.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtUSERNAME" layoutX="541.0" layoutY="309.0" onAction="#txtUSERNAMEOnAction" onKeyReleased="#txtUSERNAMEOnKeyReleased" prefHeight="35.0" prefWidth="272.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: BLACK; -fx-border-radius: 20;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtPassword" layoutX="541.0" layoutY="434.0" onAction="#txtPasswordOnAction" onKeyReleased="#txtPASSWORDOnKeyReleased" prefHeight="29.0" prefWidth="272.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: BLACK; -fx-border-radius: 20;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtUSERID" layoutX="905.0" layoutY="309.0" onAction="#txtUSERIDOnAction" onKeyReleased="#txtUSERIDOnKeyReleased" prefHeight="29.0" prefWidth="272.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: BLACK; -fx-border-radius: 20;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtDATE" layoutX="905.0" layoutY="434.0" onAction="#txtDATEOnAction" onKeyReleased="#txtDATEONKeyReleased" prefHeight="29.0" prefWidth="272.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: BLACK; -fx-border-radius: 20;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
